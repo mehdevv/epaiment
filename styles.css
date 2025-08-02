@@ -80,6 +80,7 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin: auto;
 }
 
 .header-logo {

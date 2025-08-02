@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>دفع الحقوق إعادة تسجيل للسنة الجامعية 2025/2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Arabic:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">تحميل...</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="logo.png.png" alt="PROGRES Logo" class="header-logo">
+                <img src="logo-mesrs-l.png.png" alt="MESRS Logo" class="header-logo">
+                <img src="carte_CIB.jpg.jpeg" alt="CIB Card" class="header-logo">
+            </div>
+            
+            <div class="language-dropdown" id="language-dropdown">
+                <button class="language-dropdown-btn" id="language-dropdown-btn" role="combobox" aria-haspopup="listbox" aria-expanded="false" aria-label="Select language" tabindex="0">
+                    <span class="globe-icon" aria-label="Language selector icon">🌐</span>
+                    <span class="selected-language" aria-label="Currently selected language">العربية</span>
+                    <span class="dropdown-arrow" aria-label="Dropdown arrow">▼</span>
+                </button>
+                <div class="language-dropdown-menu" id="language-dropdown-menu" role="listbox" aria-label="Language options">
+                    <div class="language-option" data-lang="ar" role="option" tabindex="-1" aria-selected="false">
+                        <span class="flag-icon" aria-label="Algerian flag">🇩🇿</span>
+                        <span class="language-text" aria-label="Arabic language option">العربية</span>
+                    </div>
+                    <div class="language-option" data-lang="fr" role="option" tabindex="-1" aria-selected="false">
+                        <span class="flag-icon" aria-label="French flag">🇫🇷</span>
+                        <span class="language-text" aria-label="French language option">Français</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <div class="main-container">
+            <!-- Main Title -->
+            <h1 class="main-title" data-ar="دفع الحقوق إعادة تسجيل للسنة الجامعية 2025/2026" data-fr="Paiement des droits de réinscription pour l'année universitaire 2025/2026">دفع الحقوق إعادة تسجيل للسنة الجامعية 2025/2026</h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle" data-ar="اختر الخدمة التي تريد إتمام دفعها" data-fr="Choisissez le service que vous souhaitez payer">اختر الخدمة التي تريد إتمام دفعها</p>
+
+            <!-- Services Container -->
+            <div class="services-container">
+                <!-- University Fees Button -->
+                <button class="service-button university-fees-button" role="button" tabindex="0" aria-label="الرسوم الجامعية - دفع للصاريف الجامعية الأساسية">
+                    <div class="back-arrow" aria-label="العودة للخلف">←</div>
+                    <div class="content-wrapper">
+                        <div class="button-title" data-ar="الرسوم الجامعية" data-fr="Frais universitaires">الرسوم الجامعية</div>
+                        <div class="button-subtitle" data-ar="دفع للصاريف الجامعية الأساسية" data-fr="Paiement des frais universitaires de base">دفع للصاريف الجامعية الأساسية</div>
+                    </div>
+                    <div class="button-icon" aria-label="أيقونة الجامعة">🏛️</div>
+                </button>
+
+                <!-- University Transport Button -->
+                <button class="service-button university-transport-button" role="button" tabindex="0" aria-label="النقل الجامعي - دفع اشتراك النقل الجامعي">
+                    <div class="back-arrow" aria-label="العودة للخلف">←</div>
+                    <div class="content-wrapper">
+                        <div class="button-title" data-ar="النقل الجامعي" data-fr="Transport universitaire">النقل الجامعي</div>
+                        <div class="button-subtitle" data-ar="دفع اشتراك النقل الجامعي" data-fr="Paiement de l'abonnement de transport universitaire">دفع اشتراك النقل الجامعي</div>
+                    </div>
+                    <div class="button-icon" aria-label="أيقونة الحافلة">🚌</div>
+                </button>
+
+                <!-- University Housing Button -->
+                <button class="service-button university-housing-button" role="button" tabindex="0" aria-label="الإيواء الجامعي - دفع مستحقات السكن الجامعي">
+                    <div class="back-arrow" aria-label="العودة للخلف">←</div>
+                    <div class="content-wrapper">
+                        <div class="button-title" data-ar="الإيواء الجامعي" data-fr="Hébergement universitaire">الإيواء الجامعي</div>
+                        <div class="button-subtitle" data-ar="دفع مستحقات السكن الجامعي" data-fr="Paiement des frais de logement universitaire">دفع مستحقات السكن الجامعي</div>
+                    </div>
+                    <div class="button-icon" aria-label="أيقونة المنزل">🏠</div>
+                </button>
+
+                <!-- Doctorate Program Button -->
+                <button class="service-button doctorate-program-button" role="button" tabindex="0" aria-label="برنامج الدكتوراه - دفع مستحقات برامج الدراسات العليا">
+                    <div class="back-arrow" aria-label="العودة للخلف">←</div>
+                    <div class="content-wrapper">
+                        <div class="button-title" data-ar="برنامج الدكتوراه" data-fr="Programme de doctorat">برنامج الدكتوراه</div>
+                        <div class="button-subtitle" data-ar="دفع مستحقات برامج الدراسات العليا" data-fr="Paiement des frais des programmes d'études supérieures">دفع مستحقات برامج الدراسات العليا</div>
+                    </div>
+                    <div class="button-icon" aria-label="أيقونة الكتب">📚</div>
+                </button>
+            </div>
+
+            <!-- Support Link -->
+            <div class="support-link">
+                <a href="#" class="support-text" data-ar="تحتاج مساعدة؟ طلب دعم" data-fr="Besoin d'aide ? Demander du support">تحتاج مساعدة؟ طلب دعم</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 

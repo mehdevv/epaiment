@@ -54,7 +54,12 @@
 
 body {
     font-family: 'Noto Sans Arabic', 'Cairo', Arial, sans-serif;
-    background-color: #f5f5f5;
+    background: 
+        linear-gradient(rgba(245, 245, 245, 0.8), rgba(245, 245, 245, 0.8)),
+        url('./ep.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     direction: rtl;
     text-align: right;
 }
@@ -253,7 +258,12 @@ body {
 
 /* Main Content Styles */
 .main {
-    background-color: #f5f5f5;
+    background: 
+        linear-gradient(rgba(245, 245, 245, 0.85), rgba(245, 245, 245, 0.8)),
+        url('./epp.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: calc(100vh - 80px);
     padding: 60px 20px;
     display: flex;
